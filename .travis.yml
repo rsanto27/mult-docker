@@ -16,7 +16,7 @@ after_success:
 
   # Log in on dockerhub and push the images
   - echo "$DOCKER_HUB_PASSWORD" | docker login -u "$DOCKER_HUB_ID" --password-stdin
-  - docker push rsanto27/mult-client
-  - docker push rsanto27/mult-nginx
-  - docker push rsanto27/mult-server
-  - docker push rsanto27/mult-worker
+  - docker push rsanto27/multi-client
+  - docker push rsanto27/multi-nginx
+  - docker push rsanto27/multi-server
+  - docker push rsanto27/multi-worker
